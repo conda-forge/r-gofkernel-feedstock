@@ -1,6 +1,5 @@
 {% set version = '2.1-1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-gofkernel
@@ -13,8 +12,7 @@ source:
   sha256: a3218f1a774d1c7703a5580c37b2e03d72aaf8ac6190eb9d7265d0f76ad3cf77
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
