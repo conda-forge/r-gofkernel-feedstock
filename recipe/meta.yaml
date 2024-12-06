@@ -1,4 +1,4 @@
-{% set version = '2.1-1' %}
+{% set version = "2.1-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GoFKernel_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GoFKernel/GoFKernel_{{ version }}.tar.gz
-  sha256: a3218f1a774d1c7703a5580c37b2e03d72aaf8ac6190eb9d7265d0f76ad3cf77
+  sha256: f9fcd289c8341fd4fa70f4ec71764a703b86512362612104b4ad1b4fb023c35b
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
